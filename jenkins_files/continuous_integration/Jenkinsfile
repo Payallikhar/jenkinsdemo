@@ -34,13 +34,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'cd jenkins_files/continuous_integration; npm install;'
+                sh 'cd jenkinsdemo/jenkins_files/continuous_integration; npm install;'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'cd continuous_integration; npm test;'
+                sh 'cd jenkinsdemo/continuous_integration; npm test;'
             }
         }
 
