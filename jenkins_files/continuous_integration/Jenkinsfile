@@ -46,7 +46,7 @@ pipeline {
 
         stage('BuildDockerImage') {
             steps {
-                sh 'cd jenkins_files/continuous_integration; docker build -t cbagade/cont-i-img:v4 .'
+                sh 'cd jenkins_files/continuous_integration; docker build -t payallikhar/cont-i-img:v4 .'
             }
         }
 
@@ -58,7 +58,7 @@ pipeline {
 
         stage('PushDockerImage') {
             steps {
-                sh 'cd jenkinsdemo/jenkins_files/continuous_integration; docker push cbagade/cont-i-img:v4'
+                sh 'cd jenkins_files/continuous_integration; docker push payallikhar/cont-i-img:v4'
             }
         }
     }
