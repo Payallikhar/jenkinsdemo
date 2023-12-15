@@ -28,13 +28,13 @@ pipeline {
 
         stage('Pre-cleanup') {
             steps {
-                    sh 'rm -rf package-lock.json; cd continuous_integration; rm -rf ./node_modules; rm -rf package-lock.json;'
+                    sh 'rm -rf package-lock.json; cd jenkins_files/continuous_integration; rm -rf ./node_modules; rm -rf package-lock.json;'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'cd continuous_integration; npm install;'
+                sh 'cd jenkins_files/continuous_integration; npm install;'
             }
         }
 
