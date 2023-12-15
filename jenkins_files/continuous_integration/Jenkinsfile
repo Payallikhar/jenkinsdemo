@@ -22,7 +22,7 @@ pipeline {
 
         stage('checkout') {
             steps {
-                git branch: 'main' ,credentialsId: 'GIT_TOKEN' ,url: 'https://github.com/cbagade/jenkins-learnings.git'
+                git branch: 'main' ,credentialsId: 'GIT_TOKEN' ,url: 'https://github.com/Payallikhar/jenkinsdemo.git'
             }
         }
 
