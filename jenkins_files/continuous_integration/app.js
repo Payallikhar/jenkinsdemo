@@ -6,7 +6,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res
     .status(200)
-    .json({ message: "This will demo node test for and CICD and Web  hook." });
+    .json({ message: "This will demo node test and CICD and Webhook." });
 });
 
 module.exports = app;
